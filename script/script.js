@@ -5,9 +5,8 @@ let countSet = 6;
 for (const btn of allBtnSet) {
   btn.addEventListener("click", function (e) {
     if (allBtnSet === 1) {
-      alert("success full");
     } else {
-      alert("disable");
+      alert("success full");
     }
     count = count + 1;
     document.getElementById("sit").innerText = count;
@@ -23,15 +22,41 @@ for (const btn of allBtnSet) {
   });
 }
 
-function addBtn() {
-  document.getElementById("test").setAttribute("disabled", true);
+function addBtn1() {
+  document.getElementById("test1").setAttribute("disabled", true);
+}
+function addBtn2() {
+  document.getElementById("test2").setAttribute("disabled", true);
+}
+function addBtn3() {
+  document.getElementById("test3").setAttribute("disabled", true);
+}
+function addBtn4() {
+  document.getElementById("test4").setAttribute("disabled", true);
+}
+function addBtn5() {
+  document.getElementById("test5").setAttribute("disabled", true);
+}
+function addBtn6() {
+  document.getElementById("test6").setAttribute("disabled", true);
+}
+
+function handleToggle(id, status) {
+  document.getElementById(id).style.display = status;
 }
 
 document.getElementById("cashout-box").addEventListener("click", function () {
-  document.getElementById("cashout-box").style.display = "block";
-  document.getElementById("transaction-container").style.display = "none";
+  handleToggle("cashout-box", "block");
+  handleToggle("transaction-container", "none");
 });
-document.getElementById("cashout-box").addEventListener("click", function () {
-  document.getElementById("cashout-box").style.display = "block";
-  document.getElementById("transaction-container").style.display = "none";
-});
+
+function btnBg() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b}) `;
+}
+
+function changeRgb() {
+  document.body.style.background = btnBg();
+}

@@ -37,7 +37,7 @@
           <div>
             <a class="btn p-3 rounded-3xl"
               ><img src="./assets/checkbox.png" alt="" />
-              <span class="count_task text-2xl pl-1">23</span></a
+              <span id="sit" class="count_task text-2xl pl-1">23</span></a
             >
           </div>
           <a class="btn rounded-full"
@@ -57,7 +57,7 @@
               <img src="./assets/checkbox.png" alt="" />
               <div>
                 <p>Task Assigned</p>
-                <h1 class="task_count font-bold">6</h1>
+                <h1 id="sit-let" class="task_count font-bold">6</h1>
               </div>
             </div>
           </div>
@@ -92,7 +92,7 @@
 
         <!--  -->
         <div class="grid grid-cols-3 gap-4 px-5">
-          <div class="bg-[#F4F7FF] space-y-4 rounded-lg p-4">
+          <div id="head-count" class="bg-[#F4F7FF] space-y-4 rounded-lg p-4">
             <p class="bg-white w-24 p-2 rounded-lg text-xs">ShopEase</p>
             <h3 class="title text-[23px] font-medium">
               Fix Mobile Button Issue
@@ -108,13 +108,15 @@
                 <span class="font-bold">21 March 2025</span>
               </p>
               <button
-                class="complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
+                onclick="addBtn()"
+                id="test"
+                class="complete-btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
               >
                 Completed
               </button>
             </div>
           </div>
-          <div class="bg-[#F4F7FF] space-y-4 rounded-lg p-4">
+          <div id="head-count" class="bg-[#F4F7FF] space-y-4 rounded-lg p-4">
             <p class="bg-white w-24 p-2 rounded-lg text-xs">CloudSync</p>
             <h3 class="title text-2xl font-medium">Add Dark Mode</h3>
             <p class="bg-white text-sm rounded-lg p-2">
@@ -128,7 +130,9 @@
                 <span class="font-bold">21 March 2025</span>
               </p>
               <button
-                class="complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
+                onclick="addBtn()"
+                id="test"
+                class="complete-btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
               >
                 Completed
               </button>
@@ -148,7 +152,9 @@
                 <span class="font-bold">21 March 2025</span>
               </p>
               <button
-                class="complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
+                onclick="addBtn()"
+                id="test"
+                class="complete-btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
               >
                 Completed
               </button>
@@ -168,7 +174,7 @@
                 <span class="font-bold">21 March 2025</span>
               </p>
               <button
-                class="complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
+                class="complete-btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
               >
                 Completed
               </button>
@@ -188,7 +194,7 @@
                 <span class="font-bold">21 March 2025</span>
               </p>
               <button
-                class="complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
+                class="complete-btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
               >
                 Completed
               </button>
@@ -208,7 +214,7 @@
                 <span class="font-bold">21 March 2025</span>
               </p>
               <button
-                class="complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
+                class="complete-btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80"
               >
                 Completed
               </button>
@@ -230,8 +236,10 @@
             Clear History
           </button>
         </div>
+        <div id="transaction-container"></div>
       </div>
     </section>
     <script src="./script/login.js"></script>
+    <script src="./script/script.js"></script>
   </body>
 </html>

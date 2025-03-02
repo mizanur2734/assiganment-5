@@ -26,3 +26,12 @@ for (const btn of allBtnSet) {
 function addBtn() {
   document.getElementById("test").setAttribute("disabled", true);
 }
+
+document.getElementById("cashout-box").addEventListener("click", function () {
+  document.getElementById("cashout-box").style.display = "block";
+  document.getElementById("transaction-container").style.display = "none";
+});
+document.getElementById("cashout-box").addEventListener("click", function () {
+  document.getElementById("cashout-box").style.display = "block";
+  document.getElementById("transaction-container").style.display = "none";
+});
